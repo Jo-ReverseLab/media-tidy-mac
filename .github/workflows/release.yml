@@ -115,7 +115,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         if: env.HAS_TAP_KEY == 'true'
         with:
-          repository: Ben-ReverseLab/homebrew-tap
+          repository: Jo-ReverseLab/homebrew-tap
           ssh-key: ${{ secrets.TAP_DEPLOY_KEY }}
           path: tap
       - name: Update cask

@@ -10,7 +10,7 @@
 3. For the Apple Photos library: **System Settings → Privacy & Security → Full Disk Access** → add MediaTidy.
    Updates keep this permission.
 
-Homebrew: `brew install --cask ben-reverselab/tap/mediatidy`
+Homebrew: `brew install --cask jo-reverselab/tap/mediatidy`
 
 Verify the download: `shasum -a 256 -c MediaTidy-VERSION.dmg.sha256` and
-`gh attestation verify MediaTidy-VERSION.dmg --repo Ben-ReverseLab/media-tidy-mac`
+`gh attestation verify MediaTidy-VERSION.dmg --repo Jo-ReverseLab/media-tidy-mac`

@@ -1,8 +1,8 @@
 # MediaTidy
 
-[![Tests](https://github.com/Ben-ReverseLab/media-tidy-mac/actions/workflows/tests.yml/badge.svg)](https://github.com/Ben-ReverseLab/media-tidy-mac/actions/workflows/tests.yml)
-[![Latest release](https://img.shields.io/github/v/release/Ben-ReverseLab/media-tidy-mac)](https://github.com/Ben-ReverseLab/media-tidy-mac/releases/latest)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Ben-ReverseLab/media-tidy-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/Ben-ReverseLab/media-tidy-mac)
+[![Tests](https://github.com/Jo-ReverseLab/media-tidy-mac/actions/workflows/tests.yml/badge.svg)](https://github.com/Jo-ReverseLab/media-tidy-mac/actions/workflows/tests.yml)
+[![Latest release](https://img.shields.io/github/v/release/Jo-ReverseLab/media-tidy-mac)](https://github.com/Jo-ReverseLab/media-tidy-mac/releases/latest)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Jo-ReverseLab/media-tidy-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/Jo-ReverseLab/media-tidy-mac)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 A macOS app for photographers: compare photos and videos between folders and drives, find duplicates, and sort files into folders by their metadata (capture date, camera, lens …).
@@ -20,7 +20,7 @@ A macOS app for photographers: compare photos and videos between folders and dri
 
 ## Installation
 
-1. Download **[MediaTidy.dmg](https://github.com/Ben-ReverseLab/media-tidy-mac/releases/latest)** (macOS 13 Ventura or later, Apple silicon and Intel), open it and drag **MediaTidy** into **Applications**. Everything it needs, including [ExifTool](https://exiftool.org), is built in.
+1. Download **[MediaTidy.dmg](https://github.com/Jo-ReverseLab/media-tidy-mac/releases/latest)** (macOS 13 Ventura or later, Apple silicon and Intel), open it and drag **MediaTidy** into **Applications**. Everything it needs, including [ExifTool](https://exiftool.org), is built in.
 2. **First start:** MediaTidy is free and open source but not notarized by Apple (that needs a paid Apple developer account), so macOS blocks it the first time:
    - **macOS 15 or later:** open MediaTidy, click **Done**, then open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** (shown for about an hour), confirm with your password.
    - **macOS 13–14:** right-click (Control-click) MediaTidy → **Open** → **Open**.
@@ -34,7 +34,7 @@ A macOS app for photographers: compare photos and videos between folders and dri
 ### Homebrew
 
 ```sh
-brew install --cask ben-reverselab/tap/mediatidy
+brew install --cask jo-reverselab/tap/mediatidy
 ```
 
 The first start works as described above. `brew upgrade` installs new versions.
@@ -43,7 +43,7 @@ The first start works as described above. `brew upgrade` installs new versions.
 
 ```sh
 shasum -a 256 -c MediaTidy-<version>.dmg.sha256
-gh attestation verify MediaTidy-<version>.dmg --repo Ben-ReverseLab/media-tidy-mac   # built by GitHub Actions from this repository
+gh attestation verify MediaTidy-<version>.dmg --repo Jo-ReverseLab/media-tidy-mac   # built by GitHub Actions from this repository
 ```
 
 ## Usage
@@ -142,7 +142,7 @@ Needs Python ≥ 3.11 with tkinter and ExifTool; no other Python packages.
 
 ```sh
 brew install python-tk@3.14 exiftool          # Homebrew; any Python ≥ 3.11 with tkinter works
-git clone https://github.com/Ben-ReverseLab/media-tidy-mac.git
+git clone https://github.com/Jo-ReverseLab/media-tidy-mac.git
 cd media-tidy-mac
 app/build-app.sh                              # builds MediaTidy.app (a small launcher, signed locally)
 python3 -m mediatidy check                    # checks dependencies and drive access

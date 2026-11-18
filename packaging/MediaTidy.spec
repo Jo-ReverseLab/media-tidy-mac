@@ -55,6 +55,6 @@ app = BUNDLE(
         "LSMinimumSystemVersion": "13.0",
         "LSApplicationCategoryType": "public.app-category.photography",
         "NSRemovableVolumesUsageDescription": REMOVABLE,
-        "NSHumanReadableCopyright": "MIT License – github.com/Ben-ReverseLab/media-tidy-mac",
+        "NSHumanReadableCopyright": "MIT License – github.com/Jo-ReverseLab/media-tidy-mac",
     },
 )
