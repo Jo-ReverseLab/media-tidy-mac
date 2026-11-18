@@ -21,7 +21,7 @@ First public release.
 - English and German user interface (`ui.language`).
 - Command line interface (`mediatidy sync|duplicates|sort|undo|check …`).
 - Download: a ready-to-use `MediaTidy.app` for macOS 13 or later (Apple silicon and Intel) as a DMG on the releases page – Python, Tk and ExifTool are built in, nothing else to install. Every release is signed with the same certificate, so macOS keeps Full Disk Access across updates.
-- Homebrew: `brew install --cask ben-reverselab/tap/mediatidy`.
+- Homebrew: `brew install --cask jo-reverselab/tap/mediatidy`.
 - Colour themes: automatic (light or dark like macOS), light, dark, sand, sage, night blue and graphite (`ui.theme`, takes effect after a restart).
 - HTML report: filter the table by status (drop-down next to the text filter, with counts).
 
@@ -35,5 +35,5 @@ First public release.
 
 Run from source only, not published as a release – all its features are part of 1.0.0.
 
-[Unreleased]: https://github.com/Ben-ReverseLab/media-tidy-mac/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/Ben-ReverseLab/media-tidy-mac/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Jo-ReverseLab/media-tidy-mac/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Jo-ReverseLab/media-tidy-mac/releases/tag/v1.0.0
